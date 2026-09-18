@@ -24,27 +24,35 @@ export default function ProjectsSection() {
   const renderPreview = (index) => {
     if (index === 0) {
       return (
-        <div className="preview-browser">
-          <div className="preview-toolbar"><i></i><i></i><i></i><span></span></div>
-          <div className="preview-nav"><b>evently</b><small>Explore&nbsp;&nbsp; Venues&nbsp;&nbsp; Services</small><em>Plan an event</em></div>
-          <div className="preview-hero"><small>MAKE IT A MOMENT</small><strong>Find the perfect<br /><span>place to celebrate.</span></strong><div className="preview-search">What are you planning? <b>Search</b></div></div>
-          <div className="preview-cards"><i></i><i></i><i></i></div>
+        <div className="preview-store">
+          <div className="store-top"><b>Shop<span>ly</span></b><small>Home&nbsp;&nbsp; Products&nbsp;&nbsp; Categories</small><em>Cart (2)</em></div>
+          <div className="store-hero"><small>NEW COLLECTION</small><strong>Find what<br /><span>you love.</span></strong><button>Shop now</button></div>
+          <div className="store-products"><i></i><i></i><i></i></div>
         </div>
       );
     }
     if (index === 1) {
       return (
-        <div className="preview-xray">
-          <div className="xray-sidebar"><b>DX</b><span></span><span></span><span></span></div>
-          <div className="xray-main"><div className="xray-top"><small>ANALYSIS DASHBOARD</small><b>● LIVE</b></div><div className="xray-image"><div className="xray-jaw"></div><i></i><i></i><i></i></div><div className="xray-stats"><span></span><span></span><span></span></div></div>
+        <div className="preview-notes">
+          <div className="notes-side"><b>Notes</b><span>All notes</span><span>Favorites</span><span>Trash</span></div>
+          <div className="notes-main"><div className="notes-top"><small>MY NOTES</small><b>+ New note</b></div><div className="note-cards"><i><b>Project ideas</b><span>Plan the next release...</span></i><i><b>Shopping list</b><span>Milk, bread, coffee...</span></i><i><b>Meeting notes</b><span>Remember to follow up...</span></i></div></div>
+        </div>
+      );
+    }
+    if (index === 2) {
+      return (
+        <div className="preview-quiz">
+          <div className="quiz-top"><b>QUIZ<span>APP</span></b><small>Question 04 / 10</small></div>
+          <div className="quiz-progress"><i></i></div>
+          <div className="quiz-content"><small>JAVASCRIPT</small><strong>Which method creates a new array from the results of calling a function?</strong><span>A&nbsp;&nbsp; forEach()</span><span className="selected">B&nbsp;&nbsp; map()</span><span>C&nbsp;&nbsp; filter()</span></div>
         </div>
       );
     }
     return (
-      <div className="preview-quiz">
-        <div className="quiz-top"><b>QUIZ<span>LAB</span></b><small>Question 04 / 10</small></div>
-        <div className="quiz-progress"><i></i></div>
-        <div className="quiz-content"><small>JAVASCRIPT</small><strong>Which method creates a new array from the results of calling a function?</strong><span>A&nbsp;&nbsp; forEach()</span><span className="selected">B&nbsp;&nbsp; map()</span><span>C&nbsp;&nbsp; filter()</span></div>
+      <div className="preview-bookmarks">
+        <div className="bookmarks-top"><b>Bookmark<span>er</span></b><button>+ Add bookmark</button></div>
+        <div className="bookmark-form"><span>Website name</span><span>https://example.com</span><b>Save</b></div>
+        <div className="bookmark-list"><i><b>MDN Web Docs</b><span>developer.mozilla.org</span></i><i><b>GitHub</b><span>github.com</span></i></div>
       </div>
     );
   };

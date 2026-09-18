@@ -1,27 +1,35 @@
 export const projects = [
   {
-    title: "EventHub",
-    type: "Frontend / Marketplace",
-    description: "A modern event-planning marketplace where users set a budget and discover suitable venues and services.",
-    tags: ["React", "JavaScript", "Responsive UI"],
-    repoUrl: "https://github.com/MohamedWael11",
-    liveDemo: null
+    title: "E-Commerce Application",
+    type: "Frontend / React",
+    description: "A responsive e-commerce application with REST API integration, authentication, product filtering, and shopping cart functionality.",
+    tags: ["React.js", "Tailwind CSS", "REST API"],
+    repoUrl: "https://github.com/MohamedWael11/fesh",
+    liveDemo: "https://fesh-pxs9-mohamed-waels-projects-82085d1e.vercel.app/"
   },
   {
-    title: "Dental X-Ray Detection",
-    type: "AI / Computer Vision",
-    description: "A YOLOv11 computer-vision application for detecting caries, crowns, and fillings in panoramic dental X-rays.",
-    tags: ["Python", "YOLOv11", "Computer Vision"],
-    repoUrl: "https://github.com/MohamedWael11",
-    liveDemo: null
+    title: "Note App",
+    type: "Frontend / Full-Stack",
+    description: "A responsive note-taking application with JWT authentication, CRUD functionality, REST APIs, form validation, and protected navigation.",
+    tags: ["React.js", "Axios", "Formik", "Yup"],
+    repoUrl: "https://github.com/MohamedWael11/Note",
+    liveDemo: "https://mynoteapp-two.vercel.app/signup"
   },
   {
-    title: "Quiz Application",
+    title: "Quiz App",
     type: "Frontend / JavaScript",
-    description: "A responsive interactive quiz app with clean UI, dynamic questions, score tracking, and client-side logic.",
-    tags: ["HTML", "CSS", "JavaScript"],
+    description: "An interactive quiz application with dynamic question rendering, answer validation, score tracking, navigation, and reset functionality.",
+    tags: ["JavaScript", "HTML5", "CSS3"],
     repoUrl: "https://github.com/MohamedWael11/Quiz-app",
-    liveDemo: null
+    liveDemo: "https://quiz-app-six-eta.vercel.app/"
+  },
+  {
+    title: "Bookmark Manager",
+    type: "Frontend / Web App",
+    description: "A responsive bookmark management application with CRUD functionality, Regex validation, Bootstrap styling, and Local Storage persistence.",
+    tags: ["HTML5", "Bootstrap 5", "Local Storage"],
+    repoUrl: "https://github.com/MohamedWael11/Bookmark",
+    liveDemo: "https://github.com/MohamedWael11/assignment-10-js"
   }
 ];
 
