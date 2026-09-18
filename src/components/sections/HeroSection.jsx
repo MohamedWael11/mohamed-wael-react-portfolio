@@ -1,7 +1,10 @@
 import React from "react";
-import { ArrowDown, ArrowUpRight, BrainCircuit, Code2, Sparkles, Terminal } from "lucide-react";
+import { ArrowDown, ArrowUpRight, BrainCircuit, Code2, Download, Sparkles, Terminal } from "lucide-react";
 
 export default function HeroSection() {
+  const nameLetters = "Mohamed Wael".split("");
+  const titleLines = ["Mohamed", "Wael"];
+
   return (
     <section id="home" className="hero section">
       <div className="hero-copy">
@@ -10,8 +13,29 @@ export default function HeroSection() {
         <div className="hero-title-wrap">
           <p className="mini-kicker">HELLO, I'M</p>
           <h1 className="hero-title">
-            Mohamed<br />
-            <span>Wael<span className="dot">.</span></span>
+            <span className="hero-title-line">
+              {titleLines[0].split("").map((letter, index) => (
+                <span
+                  className="hero-title-letter"
+                  key={`${letter}-${index}`}
+                  style={{ "--delay": `${index * 80}ms` }}
+                >
+                  {letter}
+                </span>
+              ))}
+            </span>
+            <span className="hero-title-line accent-line">
+              {titleLines[1].split("").map((letter, index) => (
+                <span
+                  className="hero-title-letter"
+                  key={`${letter}-${index}`}
+                  style={{ "--delay": `${(index + titleLines[0].length) * 80}ms` }}
+                >
+                  {letter}
+                </span>
+              ))}
+              <span className="dot">.</span>
+            </span>
           </h1>
         </div>
 
@@ -27,6 +51,9 @@ export default function HeroSection() {
 
         <div className="hero-actions">
           <a href="#projects" className="btn primary">Explore My Work <ArrowUpRight size={17} /></a>
+          <a href="/cv/CV.pdf" className="btn ghost" download="Mohamed-Wael-CV.pdf">
+            Download CV <Download size={17} />
+          </a>
           <a href="#contact" className="btn ghost">Let's Connect</a>
         </div>
 
@@ -50,7 +77,13 @@ export default function HeroSection() {
             <Terminal size={15} />
           </div>
           <div className="avatar-large">MW</div>
-          <div className="card-name">Mohamed Wael</div>
+          <div className="card-name" aria-label="Mohamed Wael">
+            {nameLetters.map((letter, index) => (
+              <span key={`${letter}-${index}`} style={{ "--delay": `${index * 70}ms` }}>
+                {letter === " " ? "\u00A0" : letter}
+              </span>
+            ))}
+          </div>
           <div className="card-role">FRONTEND DEVELOPER</div>
 
           <div className="code-snippet">
